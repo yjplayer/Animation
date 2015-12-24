@@ -31,6 +31,16 @@ public class TweenActivity extends Activity {
         });
     }
 
+    public void custom(View view){
+        CustomAnimation customAnimation = new CustomAnimation(
+                Animation.RELATIVE_TO_PARENT,0, Animation.RELATIVE_TO_PARENT,0.8f,
+                Animation.ABSOLUTE,1.0f, Animation.RELATIVE_TO_PARENT,-1.0f
+        );
+        customAnimation.setDuration(1500);
+        customAnimation.setFillAfter(true);
+        mImageView.startAnimation(customAnimation);
+    }
+
     /**
      * 0.0全透明
      * 1.0不透明
@@ -40,8 +50,8 @@ public class TweenActivity extends Activity {
 //        AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f,1.0f);
 //        alphaAnimation.setDuration(3000);
 //        mImageView.startAnimation(alphaAnimation);
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.alpha);
-        mImageView.startAnimation(animation);
+//        Animation animation = AnimationUtils.loadAnimation(this, R.anim.alpha);
+//        mImageView.startAnimation(animation);
     }
 
     public void rotate(View view){
