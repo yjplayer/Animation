@@ -19,6 +19,7 @@
 
         <activity android:name=".animation.TweenActivity"></activity>
         <activity android:name=".animation.AnimationTest"></activity>
+        <activity android:name=".animation.PropertyActivity"></activity>
     </application>
 
 </manifest>

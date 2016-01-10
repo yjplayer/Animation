@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import cn.dev.animation.animation.PropertyActivity;
 import cn.dev.animation.animation.TweenActivity;
 
 public class MainActivity extends Activity {
@@ -20,11 +21,10 @@ public class MainActivity extends Activity {
     }
 
     public void drawableAnimation(View v){
-
     }
 
     public void propertyAnimation(View v){
-
+        startActivity(new Intent(this, PropertyActivity.class));
     }
 
 }
