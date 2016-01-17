@@ -29,4 +29,8 @@ public class MainActivity extends Activity {
         startActivity(new Intent(this, PropertyActivity.class));
     }
 
+    public void shape(View view){
+        startActivity(new Intent(this, ShapeActivity.class));
+    }
+
 }
